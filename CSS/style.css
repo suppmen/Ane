@@ -1,0 +1,125 @@
+header ul {
+     display: flex;
+       justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 20px;
+
+}
+
+header ul li {
+     display: list-item;
+   list-style: none;
+   padding: 2px;
+   margin: 0 1px;
+}
+
+
+header ul li a.active {
+    font-weight: 900;
+
+}
+
+
+header li a {
+    display: block;
+    min-width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    background: white;
+    text-decoration: none;
+}
+
+
+header li:hover a {
+    color: gray;
+}
+
+header li:hover ul li a {
+    height: 40px;
+    line-height: 40px;
+}
+
+header li:hover ul li a:hover {
+    color: gray;
+}
+
+header li ul {
+    display: none;
+}
+
+header li ul li {
+    display: block;
+    float: none;
+}
+
+header li ul li a {
+    min-width: 100px;
+    padding: 0px 5px;
+}
+
+
+header ul li a:hover + .hidden,
+.hidden:hover {
+    display: block;
+    position: absolute;
+    z-index: 999;
+}
+
+header input[type=checkbox] {
+    display: none;
+}
+
+header input[type=checkbox]:checked ~ #menu {
+    display: block;
+}
+
+header .show-menu {
+
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 0;
+    display: none;
+    transition: color 1s;
+}
+
+header label:hover {
+    color: darkgray;
+}
+
+
+
+
+@media screen and (max-width: 760px) {
+   header ul {
+        position: static;
+        display: none;
+    }
+
+    header li {
+        margin-bottom: 1px;
+    }
+
+    header ul li,
+    header li a {
+        width: 100%
+    }
+
+    header .show-menu {
+        display: block;
+    }
+
+    header ul li a:hover + .hidden,
+    .hidden:hover {
+        display: block;
+        position: relative;
+
+    }
+
+}
