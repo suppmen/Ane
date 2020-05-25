@@ -121,6 +121,11 @@ header input[type=checkbox]:checked ~ #menu {
     display: block;
 }
 
+#menu{
+        margin-left: 50px;
+
+}
+
 header .show-menu {
 
     text-decoration: none;
