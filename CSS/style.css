@@ -1,15 +1,15 @@
-
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
-    font-family:  Montserrat, "Helvetica Neue", sans-serif;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
 }
 
 
 /*************Footer************/
-footer{
+footer {
 
     background-color: #695559;
     color: white;
@@ -22,17 +22,20 @@ footer{
     padding: 20px;
     flex-wrap: wrap;
 }
-footer a{
+
+footer a {
     color: white;
     text-decoration: none;
     margin-top: 20px;
 }
-footer nav{
+
+footer nav {
     display: flex;
     flex-flow: column;
     justify-content: space-around;
 }
-footer .social{
+
+footer .social {
     display: flex;
     flex-flow: column;
 }
@@ -83,8 +86,9 @@ header li:hover a {
 }
 
 header li:hover ul li a {
-    height: 40px;
-    line-height: 40px;
+    height: 25px;
+    line-height: 20px;
+    text-align: left;
 }
 
 header li:hover ul li a:hover {
@@ -102,14 +106,14 @@ header li ul li {
 
 header li ul li a {
     min-width: 100px;
-    padding: 0px 5px;
+    padding: 0px;
 }
 
 
 header ul li a:hover + .hidden,
 .hidden:hover {
     display: block;
-    position: absolute;
+    position: fixed;
     z-index: 9999;
 }
 
@@ -162,6 +166,10 @@ header label:hover {
 
     header .show-menu {
         display: block;
+    }
+
+    header li:hover ul li a {
+        text-align: center;
     }
 
     header ul li a:hover + .hidden,
