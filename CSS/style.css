@@ -47,6 +47,7 @@ header {
     justify-content:flex-end;
 
 }
+/*
 
 .lo {
     background-image: url(../logoOrigi.png);
@@ -62,8 +63,13 @@ header > .lo-wrapper {
     margin-left: 7%;
 
 }
+*/
 
 /******  TopNavigation ****/
+.top-nav{
+    position: absolute;
+    z-index: 99999;
+}
 
 header ul {
     display: flex;
@@ -73,6 +79,7 @@ header ul {
     padding: 0;
     overflow: hidden;
     font-size: 15px;
+
 
 }
 
