@@ -1,3 +1,34 @@
+
+const btnMenu = document.querySelector(".menu-btn");
+const btnExit = document.querySelector(".exit-btn");
+const headerUl = document.getElementById("menu");
+
+btnMenu.addEventListener("click", showNav);
+function showNav(){
+    console.log("hi mom", headerUl)
+    headerUl.classList.add("shown");
+    btnMenu.classList.add("hidden")
+        btnMenu.classList.remove("shown")
+
+    btnExit.classList.remove("hidden");
+}
+
+btnExit.addEventListener("click", closeMenu);
+function closeMenu(){
+
+
+    headerUl.classList.remove("shown");
+   btnExit.classList.add("hidden");
+    btnMenu.classList.add("shown");
+
+    headerUl.classList.add("hidden");
+            console.log("hi dad", headerUl)
+
+}
+
+
+
+
 /***** Get Data from WP *****/
 
 

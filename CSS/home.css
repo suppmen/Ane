@@ -1,29 +1,19 @@
 header {
   height: 100vh;
   width: 100%;
-  /* background-image: url("/media/silentlands.jpg"); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 header li a {
   background: none;
   color: white;
-  margin-top: 40px;
-  font-weight: 900;
 }
 header .logo-white {
   position: absolute;
   top: -30px;
   left: 20px;
   width: 250px;
-  z-index: 100;
+  z-index: 110;
 }
-#menu {
-  z-index: 100;
-  position: absolute;
-  right: 20px;
-}
+
 header .navigation {
   position: absolute;
   right: 50px;
@@ -45,9 +35,10 @@ header .current-bg {
   height: 100vh;
   width: 100%;
   position: absolute;
+              object-fit: cover;
+
   top: 0;
 
-  /* z-index: 10; */
   filter: brightness(0.9);
   -webkit-transition: opacity 0.3s ease-in-out;
   -moz-transition: opacity 0.3s ease-in-out;
@@ -57,4 +48,33 @@ header .current-bg {
 
 header .current-bg.transparent {
   opacity: 0;
+}
+header li:hover a {
+    color: white;
+}
+
+
+
+@media screen and (max-width: 760px) {
+  .top-nav{
+
+  background: none;
+
+}
+    .menu-btn, .exit-btn{
+      color: white;
+
+    }
+  header ul li,
+    header li a {
+font-weight: 500;
+        font-size: 1.2em;
+    }
+
+header .logo-white {
+   top: 0px;
+  left: 20px;
+  width: 200px;
+  z-index: 110;
+}
 }

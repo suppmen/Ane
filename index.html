@@ -1,82 +1,72 @@
 <!DOCTYPE html>
 <html lang="">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/home.css" />
 
-<body>
-<header>
-<!--
- <div class="lo-wrapper">
-            <a href="index.html">
-                <div class="lo">Logo</div>
-            </a>
-    </div>
--->
-<nav class="top-nav">
-    <label for="show-menu" class="show-menu">Menu</label>
-    <input type="checkbox" id="show-menu" role="button">
-    <ul id="menu">
-<!--        <li><a class="active" herf="index.html">Home</a></li>-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+  </head>
 
-        <li><a class="active" href="#">Artworks</a>
-            <ul class="hidden">
-                <li><a href="#">After rain</a></li>
-                <li><a href="#">She</a></li>
-                <li><a href="#">Rainy Season</a></li>
-                <li><a href="#">Talisman</a></li>
-                <li><a href="#">Silent Lands</a></li>
+  <body>
+    <header>
 
-            </ul>
-        </li>
-     <li><a herf="#">Process</a></li>
-     <li><a herf="#">About</a></li>
-     <li><a herf="#">Contact</a></li>
+      <img src="/media/logo white-02.png" alt="" class="logo-white" />
+       <div class="menu-btn">Menu</div>
+    <div class="exit-btn hidden">X</div>
+      <nav class="top-nav">
 
-    </ul>
+        <ul id="menu">
 
-</nav>
-</header>
+          <li><a href="/artwork.html">Artworks</a></li>
+          <li><a herf="#">Process</a></li>
+          <li><a herf="#">About</a></li>
+          <li><a herf="#">Contact</a></li>
+        </ul>
+      </nav>
 
-
-    <footer>
-        <nav>
-            <a href="">Artwork</a>
-            <a href="">About</a>
-            <a href="">CV</a>
-            <a href="">Contact</a>
-        </nav>
-        <div class="logo"><img src="/media/logo%20white-02.png" width="350" height="auto" alt=""></div>
-        <div class="footer-info">
-            <p>497 Evergreen Rd. Roseville,
-CA 95673
-</p>
-       <p>+44 345 678 903
-</p>
-            <a href="mailto:ane@anefabricius.com">ane@anefabricius.com</a>
+      <section class="navigation">
+        <div class="arrow-up">
+          <i class="fas fa-chevron-up"></i>
         </div>
-        <div class="social">
-            <a href=""><i class="fab fa-facebook-f"></i>
-
-</a>
-            <a href=""><i class="fab fa-instagram"></i>
-
-</a>
-            <a href=""><i class="fab fa-twitter"></i>
-
-</a>
+        <div class="arrow-down">
+          <i class="fas fa-chevron-down"></i>
         </div>
-    </footer>
+      </section>
+      <div id="scroll-image" class="bg-container">
+        <img
+          class="current-bg test"
+          src="/media/memoriesfromrainyseason4.jpg"
+          alt="silentlands"
+        />
+        <img
+          class="current-bg test"
+          src="/media/talisman.jpg"
+          alt="silentlands"
+        />
+        <img class="current-bg test" src="/media/she1.jpg" alt="silentlands" />
+        <img
+          style="filter: brightness(0.6);"
+          class="current-bg test"
+          src="/media/after-rain.jpg"
+          alt="silentlands"
+        />
+        <img
+          class="current-bg test"
+          src="/media/silentlands.jpg"
+          alt="silentlands"
+        />
+      </div>
+    </header>
+
     <script src="/JS/script.js"></script>
-
-
-
-</body></html>
-
-
-
+    <script src="/JS/scroll.js"></script>
+  </body>
+</html>

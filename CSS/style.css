@@ -11,20 +11,20 @@ body {
 /*************Footer************/
 footer {
 
-    background-color: #695559;
-    color: white;
+    background-color: #acb8c1a6;
     position: absolute;
     bottom: 0;
     display: flex;
+    flex-flow: column;
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
+    padding: 0 100px;
     flex-wrap: wrap;
 }
 
 footer a {
-    color: white;
+    color: black;
     text-decoration: none;
     margin-top: 20px;
 }
@@ -37,38 +37,33 @@ footer nav {
 
 footer .social {
     display: flex;
-    flex-flow: column;
+    justify-content: space-between;
+    width: 100px;
 }
 
 /**********************************/
 header {
-    display: flex;
+
     width: 100%;
-    justify-content:flex-end;
+
 
 }
-/*
 
-.lo {
-    background-image: url(../logoOrigi.png);
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 50px;
-    margin: 0px;
+header .logo-black {
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  width: 250px;
+  z-index: 100;
 }
 
-header > .lo-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 7%;
-
-}
-*/
 
 /******  TopNavigation ****/
 .top-nav{
     position: absolute;
-    z-index: 99999;
+    z-index: 100;
+    right: 70px;
+    top: 25px;
 }
 
 header ul {
@@ -79,6 +74,7 @@ header ul {
     padding: 0;
     overflow: hidden;
     font-size: 15px;
+    flex-flow: row;
 
 
 }
@@ -92,7 +88,8 @@ header ul li {
 
 
 header ul li a.active {
-    font-weight: 900;
+   color: #695559;
+
 
 }
 
@@ -109,22 +106,9 @@ header li a {
 
 
 header li:hover a {
-    color: gray;
+    color: #695559;
 }
 
-header li:hover ul li a {
-    height: 25px;
-    line-height: 20px;
-    text-align: center;
-}
-
-header li:hover ul li a:hover {
-    color: black;
-}
-
-header li ul {
-    display: none;
-}
 
 
 header li ul li a {
@@ -133,40 +117,27 @@ header li ul li a {
 }
 
 
-header ul li a:hover + .hidden,
-.hidden:hover {
-    display: block;
-    position: fixed;
-    z-index: 9999;
+
+.menu-btn{
+    position: absolute;
+    right : 70px;
 }
 
-header input[type=checkbox] {
-    display: none;
-}
-
-header input[type=checkbox]:checked ~ #menu {
-    display: block;
-}
 
 #menu{
         margin-left: 50px;
 
 }
 
-header .show-menu {
 
-    text-decoration: none;
-    color: black;
-    text-align: right;
-    font-size: 15px;
-    padding: 1rem;
-    display: none;
-    transition: color 1s;
-}
 
-header label:hover {
-    color: darkgray;
-}
+
+  .menu-btn, .exit-btn{
+        position: absolute;
+        right: 80px;
+        top: 55px;
+      display: none;
+    }
 
 /***********************************/
 
@@ -176,6 +147,11 @@ header label:hover {
     header ul {
         position: static;
         display: none;
+        align-self: center;
+        flex-flow: column;
+        margin: 0;
+        text-align: center;
+        z-index: 120;
     }
 
     header li {
@@ -185,25 +161,63 @@ header label:hover {
     header ul li,
     header li a {
         width: 100%;
-        text-align: right;
+        text-align: center;
    padding-right: 10px;
+        font-size: 1.2em;
     }
 
-    header .show-menu {
-        display: block;
-    }
 
     header li:hover ul li a {
-        text-align: right;
+        text-align: center;
     }
 
-    header ul li a:hover + .hidden,
-    .hidden:hover {
-        display: block;
-        position: sticky;
+
+
+    header .logo-black {
+  top: 0px;
+  left: 20px;
+  width: 200px;
+  z-index: 110;
+}
+    .top-nav{
+        width: 100vw;
+        display: flex;
+        right: 0;
+        top: -100px;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: 100vh;
+        z-index: 100;
+    }
+     .menu-btn, .exit-btn{
+        position: absolute;
+        right: 80px;
+        top: 70px;
+      display: inline-block;
+         z-index: 110;
+         font-weight: 500;
+         cursor: pointer;
 
     }
+        .menu-btn{
 
+        font-size: 1.2em;
+
+
+    }
+     .exit-btn{
+
+        font-size: 1.3em;
+
+
+    }
+  .hidden{
+    display: none;
+}
+    .shown{
+        display: flex;
+    }
 
 }
 

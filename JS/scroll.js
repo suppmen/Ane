@@ -1,4 +1,4 @@
-document.window.onload = function () {
+window.onload = function () {
   // Index of current image
   // which is on display
   var imageIndex = 0;
