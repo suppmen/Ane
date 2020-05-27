@@ -1,0 +1,12 @@
+.contact {
+
+    position: absolute;
+    top: 200px;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 100px;
+    flex-wrap: wrap;
+}
