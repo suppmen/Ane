@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-/******* Mobile version break point ******/
-
-@media screen and (max-width: 760px) {
-
-
-=======
 *box-sizing: border-box;
 
 #single-art {
@@ -62,6 +55,9 @@ img {
     height: auto;
 }
 
+
+/******* Mobile version break point ******/
+
 @media screen and (max-width: 760px) {
     .top-nav {
 
@@ -95,5 +91,4 @@ img {
         margin-right: 10%;
 
     }
->>>>>>> singleArt
 }
