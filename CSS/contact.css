@@ -1,14 +1,12 @@
-<<<<<<< HEAD
+
 /******* Mobile version break point ******/
 
-@media screen and (max-width: 760px) {
 
 
-=======
 .contact {
 
     position: absolute;
-    top: 200px;
+    top:500px;
     display: flex;
     flex-flow: column;
     width: 100%;
@@ -19,7 +17,23 @@
 }
 
 
-heklelkeh{
-    hghjghj
->>>>>>> Contact
+
+
+
+
+
+
+@media screen and (max-width: 760px) {
+
+    .top-nav{
+
+  background:none;
+
+}
+    header ul{
+        background: white;
+        width: 100vw;
+
+    }
+
 }
