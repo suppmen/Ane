@@ -28,6 +28,7 @@
 /******* Mobile version break point ******/
 
 @media screen and (max-width: 760px) {
-
+.process-description{ grid-template-columns: 1fr,
+        }
 
 }
