@@ -87,6 +87,19 @@ main li:hover a {
 }
 
 
+    main ul li{
+    padding: 15px;
+
+}
+
+
+
+}
+
+@media screen and (max-width: 599px) {
+
+
+
     #image {
     width: 100%;
     max-width: 300px;
