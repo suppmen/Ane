@@ -8,7 +8,9 @@
                      }
 
 .quote {margin-right:20%;
-               margin-left: 20%;}
+               margin-left: 20%;
+    margin-bottom:5%;
+margin-top:5%;}
 
 .quote p {font-size: 1.5rem;
          text-align: justify;
@@ -20,7 +22,7 @@
     grid-gap: 2%;
                 margin-right:8%;
                margin-left: 8%;
-               padding-bottom: 5%;
+               margin-bottom: 8%;
                      grid-template-columns: 1fr 1fr;
                     grid-template-areas:
     "img-area-1 p-area-1"
@@ -39,18 +41,26 @@
   .p-area-4 { grid-area: p-area-4; }
 
 
+.p-area-1, .p-area-2, .p-area-3, .p-area-4 {background-color: #acb8c1a6;}
 
-.process-description img {width: 50%;}
 
+.process-description img {
+width:100%;}
+
+
+.process-description p{margin-top:10%;
+                       margin-bottom: 10%;}
 
 /******* Mobile version break point ******/
 
 @media screen and (max-width: 760px) {
 
 
-    .process-description{ display: grid;
-                    grid-template-columns: 1fr;
-     padding-bottom: 20%;
+    .process-description{
+        margin-bottom: 50%;
+        display: grid;
+                          grid-template-columns: 1fr;
+
      grid-template-areas:
     "img-area-1"
     "p-area-1"
@@ -59,7 +69,7 @@
     "img-area-3"
     "p-area-3"
     "img-area-4"
-    "p-area-4"
-     ;}
+    "p-area-4";
+    }
 
 }
