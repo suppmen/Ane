@@ -12,8 +12,6 @@ body {
 footer {
 
     background-color: #acb8c1a6;
-    position: absolute;
-    bottom: 0;
     display: flex;
     flex-flow: column;
     width: 100%;

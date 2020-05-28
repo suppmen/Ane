@@ -10,14 +10,14 @@ html {
 }
 
 .wrapper {
-    position: relative;
-    top: 170px;
+    margin-top: 170px;
     display: flex;
     flex-flow: row wrap;
     width: 100%;
     justify-content: space-around;
     padding-left: 160px;
     padding-right: 160px;
+    margin-bottom: 50px;
 }
 
 #image {
