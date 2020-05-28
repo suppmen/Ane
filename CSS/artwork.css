@@ -104,4 +104,20 @@ main .artworkwrapper .artwork:hover img {
         width: 100vw;
 
     }
+
+    main .artworkwrapper {
+
+        position: relative;
+        height: auto;
+        width: 90%;
+        margin: auto;
+        padding: 45px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2vh;
+        grid-auto-flow: row;
+        margin-top: 20%;
+
+    }
+
 }
