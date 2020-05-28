@@ -1,3 +1,30 @@
+.process-video{margin-top: 10%;
+               margin-right:8%;
+               margin-left: 8%;
+            }
+
+.process-video video{width: 100%;
+                    height:25rem;
+                     }
+
+.quote {margin-right:20%;
+               margin-left: 20%;}
+
+.quote p {font-size: 1.5rem;
+         text-align: justify;
+         font-style: italic;
+        color:#695559;}
+
+
+.process-description{display: grid;
+                     grid-template-columns: 1fr 1fr;
+                     grid-gap: 2%;
+                      margin-right:8%;
+               margin-left: 8%;}
+
+.process-description img {width: 50%;}
+
+
 /******* Mobile version break point ******/
 
 @media screen and (max-width: 760px) {
