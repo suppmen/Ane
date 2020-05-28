@@ -1,6 +1,37 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /******* Mobile version break point ******/
 
 @media screen and (max-width: 760px) {
 
+.top-nav{
 
+  background:none;
+
+}
+    header ul{
+        background: transparent;
+        width: 100vw;
+
+    }
 }
