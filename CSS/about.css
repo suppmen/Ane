@@ -1,6 +1,104 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    position: relative;
+    top: 170px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+#image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+
+.items {
+    text-align: center;
+}
+
+main ul{
+    display: flex;
+    flex-flow: row;
+     justify-content: flex-end;
+    list-style-type: none;
+    margin-right: 0px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 15px;
+
+}
+main ul li{
+  display: list-item;
+    list-style: none;
+    padding: 30px;
+    margin: 0 1px;
+}
+
+main li a{
+    min-width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+main li:hover a {
+    color: #695559;
+}
+
+
+
 /******* Mobile version break point ******/
 
 @media screen and (max-width: 760px) {
+
+    .top-nav {
+
+        background: none;
+
+    }
+
+    header ul {
+        background: transparent;
+        width: 100vw;
+
+    }
+    .wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+    #image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+    main ul li{
+    padding: 10px;
+
+}
+
 
 
 }
