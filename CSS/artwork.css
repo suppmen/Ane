@@ -12,22 +12,11 @@ h1 {
     position: absolute;
     z-index: 1;
     font-size: 30px;
-    color: white;
+    color: #000;
     font-family: 'Montserrat', sans-serif;
     align-self: center;
-    margin: 50%;
+    /*    margin: 50%;*/
 
-}
-
-
-h1:hover {
-    position: absolute;
-    z-index: 1;
-    font-size: 30px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    margin: 50%;
 }
 
 main h1 {
@@ -78,6 +67,7 @@ main .artworkwrapper .artwork:nth-child(4n+5) {
     grid-row-start: span 2;
 }
 
+
 main .artworkwrapper .artwork img {
     height: 100%;
     width: 100%;
@@ -87,9 +77,36 @@ main .artworkwrapper .artwork img {
 
 main .artworkwrapper .artwork:hover img {
     filter: brightness(0.5)grayscale(100);
+
+
 }
 
+.artwork:hover > .info {
+    transform: translate(0%);
 
+}
+
+.artwork {
+    display: grid;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.artwork > * {
+    position: relative;
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.artwork .info {
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.8);
+    display: grid;
+    place-content: center;
+    transform: translate(100%);
+}
 
 /******* Mobile version break point ******/
 
