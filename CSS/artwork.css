@@ -1,6 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+h1 {
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    align-self: center;
+    margin: 50%;
+
+}
+
+
+h1:hover {
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 50%;
+}
+
+main h1 {
+    grid-column: 1/-1;
+}
+
+main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 8%;
+
+}
+
+main .artworkwrapper {
+    position: relative;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding: 45px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2vh;
+    grid-auto-flow: row;
+
+}
+
+
+main .artworkwrapper .artwork {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /*    overflow: hidden;*/
+}
+
+main .artworkwrapper .artwork:first-child {
+    grid-column-start: span 1;
+    grid-column-start: span 1;
+
+}
+
+main .artworkwrapper .artwork:nth-child(2n+3) {
+    grid-row-start: span 1;
+}
+
+main .artworkwrapper .artwork:nth-child(4n+5) {
+    grid-column-start: span 1;
+    grid-row-start: span 2;
+}
+
+main .artworkwrapper .artwork img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(1) grayscale(0);
+}
+
+main .artworkwrapper .artwork:hover img {
+    filter: brightness(0.5)grayscale(100);
+}
+
+
+
 /******* Mobile version break point ******/
 
 @media screen and (max-width: 760px) {
 
+    .top-nav {
+        background: none;
+    }
 
+    .header ul {
+        background: white;
+        width: 100vw;
+
+    }
 }
