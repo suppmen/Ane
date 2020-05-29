@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
     text-align: center;
 }
 
 
-h1 {
+a>h1 {
     position: absolute;
     z-index: 1;
     font-size: 30px;
     color: #000;
-    font-family: 'Montserrat', sans-serif;
     align-self: center;
-    /*    margin: 50%;*/
+    font-family: 'Merriweather', serif;
 
 }
 
-main h1 {
+main a> h1 {
     grid-column: 1/-1;
 }
 
@@ -27,7 +27,7 @@ main {
     position: relative;
     height: 100%;
     width: 100%;
-    margin-top: 8%;
+    margin-top: 125px;
 
 }
 
@@ -38,9 +38,12 @@ main .artworkwrapper {
     margin: auto;
     padding: 45px 0;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh auto;
     grid-gap: 2vh;
     grid-auto-flow: row;
+/*    height: calc(250vh - 10px);*/
+
 
 }
 
@@ -49,22 +52,29 @@ main .artworkwrapper .artwork {
     position: relative;
     height: 100%;
     width: 100%;
-    /*    overflow: hidden;*/
 }
 
 main .artworkwrapper .artwork:first-child {
     grid-column-start: span 1;
     grid-column-start: span 1;
+    grid-row: 1/3;
 
 }
 
-main .artworkwrapper .artwork:nth-child(2n+3) {
-    grid-row-start: span 1;
+main .artworkwrapper .artwork:nth-child(2) {
+    grid-row: 1/5;
 }
 
-main .artworkwrapper .artwork:nth-child(4n+5) {
-    grid-column-start: span 1;
-    grid-row-start: span 2;
+main .artworkwrapper .artwork:nth-child(3) {
+    grid-row: 3/7;
+}
+
+main .artworkwrapper .artwork:nth-child(4) {
+    grid-row: 5/-1;
+}
+
+main .artworkwrapper .artwork:nth-child(5) {
+    grid-row: 7/-1;
 }
 
 
@@ -75,14 +85,18 @@ main .artworkwrapper .artwork img {
     filter: brightness(1) grayscale(0);
 }
 
-main .artworkwrapper .artwork:hover img {
-    filter: brightness(0.5)grayscale(100);
+main .artworkwrapper .artwork:hover .artwork {
+    background: white;
+    z-index: 10;
+    position: absolute;
+    /*    filter: brightness(0.5)grayscale(100);*/
 
 
 }
 
-.artwork:hover > .info {
-    transform: translate(0%);
+.artwork:hover > a > .info {
+    /*    transform: translate(0%);*/
+    opacity: 1;
 
 }
 
@@ -93,19 +107,34 @@ main .artworkwrapper .artwork:hover img {
 
 }
 
-.artwork > * {
+.artwork  a{
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    min-height: 800px;
+}
+
+.artwork  img {
     position: relative;
     width: 100%;
     grid-column: 1/-1;
     grid-row: 1/-1;
+    min-height: 800px;
 }
 
-.artwork .info {
+
+.artwork > a > .info {
     z-index: 10;
     background: rgba(255, 255, 255, 0.8);
     display: grid;
     place-content: center;
-    transform: translate(100%);
+    /*    transform: translate(100%);*/
+    transition: .1s ease-in-out;
+    height: 100%;
+    opacity: 0;
+
 }
 
 /******* Mobile version break point ******/
@@ -123,7 +152,6 @@ main .artworkwrapper .artwork:hover img {
     }
 
     main .artworkwrapper {
-
         position: relative;
         height: auto;
         width: 90%;
@@ -131,10 +159,41 @@ main .artworkwrapper .artwork:hover img {
         padding: 45px 0;
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
         grid-gap: 2vh;
         grid-auto-flow: row;
-        margin-top: 20%;
+        height: 100%;
 
+
+    }
+
+
+    main .artworkwrapper .artwork img {
+        height: auto;
+
+    }
+
+
+    main .artworkwrapper .artwork:first-child {
+        grid-row: 1/2;
+
+    }
+
+    main .artworkwrapper .artwork:nth-child(2) {
+        grid-row: 2/3;
+    }
+
+    main .artworkwrapper .artwork:nth-child(3) {
+        grid-row: 4/5;
+    }
+
+    main .artworkwrapper .artwork:nth-child(4) {
+        grid-row: 6/7;
+        /*    grid-row-start: span 2;*/
+    }
+
+    main .artworkwrapper .artwork:nth-child(5) {
+        grid-row: 7/8;
     }
 
 }
