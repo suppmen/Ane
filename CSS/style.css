@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    font-family: Montserrat;
 }
 
 
@@ -87,12 +87,12 @@ header ul li {
 
 header ul li a.active {
    color: #695559;
-    font-weight: 900;
+    font-weight: bold;
 
 }
 
 
-header li a {
+header  li a {
     display: block;
     min-width: 100px;
     height: 50px;
@@ -105,6 +105,8 @@ header li a {
 
 header li:hover a {
     color: #695559;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
