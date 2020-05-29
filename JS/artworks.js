@@ -1,3 +1,5 @@
+
+
 const btnMenu = document.querySelector(".menu-btn");
 const btnExit = document.querySelector(".exit-btn");
 const headerUl = document.getElementById("menu");
@@ -54,7 +56,7 @@ function showData(artWorkArray) {
     artWorkArray.forEach(art => {
         console.log(art, "LoopTest");
 
-        renderLandingPage(art);
+        renderArtworkPage(art);
 
 
 
@@ -66,47 +68,22 @@ function showData(artWorkArray) {
 }
 
 
+function renderArtworkPage(ArtworkPageArray){
 
-
-function  renderLandingPage(LandingPageImageArray){
-     const template = document.querySelector(".landing").content;
+    const template = document.querySelector(".artwork-page").content;
 
         const copy = template.cloneNode(true);
 
 
-      copy.querySelector('.current-bg').src = LandingPageImageArray._embedded["wp:featuredmedia"][0].source_url;
+      copy.querySelector('.artwork-images').src = ArtworkPageArray._embedded["wp:featuredmedia"][0].source_url;
+
+    copy.querySelector(".info").textContent = ArtworkPageArray.title.rendered;
 
 
 
-
-        document.querySelector(".bg-container").appendChild(copy);
-
+        document.querySelector(".artworkwrapper").appendChild(copy);
 
 
 
 }
-
-
-
-
-let slideIndex = 0;
-function showSlides() {
-
-    let i;
-    let slides = document.getElementsByClassName("test");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-
-    }
-    console.log("showslide",slides)
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1
-    }
-    //
-    slides[slideIndex - 1].style.display = "block";
-
-
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-};
 
