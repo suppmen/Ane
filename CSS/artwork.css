@@ -9,7 +9,7 @@
 }
 
 
-h1 {
+a>h1 {
     position: absolute;
     z-index: 1;
     font-size: 30px;
@@ -19,7 +19,7 @@ h1 {
 
 }
 
-main h1 {
+main a> h1 {
     grid-column: 1/-1;
 }
 
@@ -94,10 +94,9 @@ main .artworkwrapper .artwork:hover .artwork {
 
 }
 
-.artwork:hover > .info {
+.artwork:hover > a > .info {
     /*    transform: translate(0%);*/
     opacity: 1;
-
 
 }
 
@@ -108,7 +107,16 @@ main .artworkwrapper .artwork:hover .artwork {
 
 }
 
-.artwork > * {
+.artwork  a{
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    min-height: 800px;
+}
+
+.artwork  img {
     position: relative;
     width: 100%;
     grid-column: 1/-1;
@@ -116,7 +124,8 @@ main .artworkwrapper .artwork:hover .artwork {
     min-height: 800px;
 }
 
-.artwork .info {
+
+.artwork > a > .info {
     z-index: 10;
     background: rgba(255, 255, 255, 0.8);
     display: grid;

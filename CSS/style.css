@@ -12,7 +12,9 @@ body {
     font-family: Montserrat;
 }
 
-
+a{
+    text-decoration: none;
+}
 /*************Footer************/
 footer {
 
