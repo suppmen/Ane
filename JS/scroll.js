@@ -10,8 +10,7 @@ function showSlides() {
     let i;
     let slides = document.getElementsByClassName("test");
     for (i = 0; i < slides.length; i++) {
-//        slides[i].style.display = "none";
-                slides[i].style.zIndex = "1";
+        slides[i].style.display = "none";
 
     }
     slideIndex++;
@@ -19,14 +18,12 @@ function showSlides() {
         slideIndex = 1
     }
     //
-//    slides[slideIndex - 1].style.display = "block";
-    slides[slideIndex].classList.toggle("transparent");
-        slides[slideIndex - 1].style.zIndex = "1" +  slideIndex;
+    slides[slideIndex - 1].style.display = "block";
 
 
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
 };
 
-function currentSlide(e) {
-  showSlides(e);
-}
+//function currentSlide(e) {
+//  showSlides(e);
+//}
