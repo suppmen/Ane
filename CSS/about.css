@@ -57,13 +57,22 @@ main li a{
     text-align: center;
     line-height: 50px;
     color: black;
+    font-weight: inherit;
     text-decoration: none;
 }
 
 main li:hover a {
     color: #695559;
+    text-decoration: underline;
 }
 
+.hidden{
+    display: none;
+}
+
+.shown{
+    display: block;
+}
 
 
 /******* Mobile version break point ******/
