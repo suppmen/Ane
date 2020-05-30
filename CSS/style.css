@@ -95,6 +95,7 @@ header ul li {
 header ul li a.active {
    color: #695559;
     font-weight: bold;
+    text-decoration: underline;
 
 }
 
