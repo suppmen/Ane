@@ -39,12 +39,14 @@
 
 .img-gallery {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2%;
     width: 90%;
     margin-left: 5%;
     margin-right: 10%;
     margin-bottom: 10%;
+    margin-top: 50px;
+    padding-bottom: 100px;
 
 }
 
@@ -52,6 +54,12 @@ img {
     position: relative;
     width: 100%;
     height: auto;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+.landscape{
+    grid-column: 1/-1;
 }
 
 
@@ -88,14 +96,12 @@ img {
     }
 
     .img-gallery {
-/*        grid: none;*/
-/*        display: flex;*/
-/*        flex-flow: column;*/
-/*        justify-content: space-around;*/
+    grid-template-columns: 1fr ;
+
         width: 90%;
         margin-left: 5%;
         margin-right: 10%;
-        margin-bottom: 300px;
+        padding-bottom: 400px;
 
     }
 }

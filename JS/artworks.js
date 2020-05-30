@@ -133,6 +133,11 @@ function showSingleArtPage(art){
     copy.querySelector(".area").textContent = art.place;
     copy.querySelector(".topimg").src = art._embedded["wp:featuredmedia"][0].source_url;
     copy.querySelector(".long-description").textContent = art.long_description;
+    copy.querySelector(".portrait1").src = art.portrait_one.guid;
+    copy.querySelector(".portrait2").src = art.portrait_two.guid;
+    copy.querySelector(".portrait3").src = art.portrait_three.guid;
+    copy.querySelector(".portrait4").src = art.portrait_four.guid;
+    copy.querySelector(".landscape").src = art.landscape_one.guid;
 
     const imgGalleryParent = copy.querySelector(".img-gallery");
 
