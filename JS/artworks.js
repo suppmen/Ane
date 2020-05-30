@@ -50,7 +50,7 @@ function getData() {
 //    console.log('urlParams', urlParams);
     const the_art_id = urlParams.get('art_id');
     const search_term = urlParams.get('searchTerm');
-    const link2 = "https://mymmd.dk/Ane/wp-json/wp/v2/artwork"+the_art_id+"?per_page=100&_embed";
+    const link2 = "https://mymmd.dk/Ane/wp-json/wp/v2/artwork/"+the_art_id+"?per_page=100&_embed";
     console.log(the_art_id, "IdTest");
 
 
@@ -128,12 +128,12 @@ function showSingleArtPage(art){
 //    if(art.long_description.length> 1){
 //        divArtDescription.innerHTML = art.content.rendered;
 
-    copy.querySelector('.artwork-images').src = ArtworkPageArray._embedded["wp:featuredmedia"][0].source_url;
+    copy.querySelector('.title').textContent = art.title.rendered;
 
 
 
 
-        document.querySelector("single-art").appendChild(copy);
+        document.querySelector("#single-art").appendChild(copy);
 
     };
 
