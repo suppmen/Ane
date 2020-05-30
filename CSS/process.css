@@ -1,6 +1,6 @@
 .process-video{margin-top: 10%;
-               margin-right:8%;
-               margin-left: 8%;
+               margin-right:5%;
+               margin-left: 5%;
             }
 
 .process-video video{width: 100%;
@@ -20,8 +20,9 @@ margin-top:5%;}
 
 .process-description{display: grid;
     grid-gap: 2%;
-                margin-right:8%;
-               margin-left: 8%;
+    line-height: 2em;;
+                margin-right:5%;
+               margin-left: 5%;
                margin-bottom: 8%;
                      grid-template-columns: 1fr 1fr;
                     grid-template-areas:
@@ -48,18 +49,26 @@ margin-top:5%;}
 width:100%;}
 
 
-.process-description p{margin-top:10%;
-                       margin-bottom: 10%;}
+.process-description p{margin-left:5%;
+                       margin-right:5%;
+                       margin-top: 0%;
+                       text-align: justify;
+                      }
+
+
 
 /******* Mobile version break point ******/
 
 @media screen and (max-width: 760px) {
 
 
+
+
+
     .process-description{
         margin-bottom: 50%;
         display: grid;
-                          grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
 
      grid-template-areas:
     "img-area-1"
