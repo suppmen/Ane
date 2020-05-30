@@ -129,7 +129,21 @@ function showSingleArtPage(art){
 //        divArtDescription.innerHTML = art.content.rendered;
 
     copy.querySelector('.title').textContent = art.title.rendered;
+    copy.querySelector(".short-description").textContent = art.short_description;
+    copy.querySelector(".area").textContent = art.place;
+    copy.querySelector(".topimg").src = art._embedded["wp:featuredmedia"][0].source_url;
+    copy.querySelector(".long-description").textContent = art.long_description;
 
+    const imgGalleryParent = copy.querySelector(".img-gallery");
+
+    art.gallery_pictures.forEach(picture =>{
+        const currentImg = document.createElement("img");
+        currentImg.src = picture.guid;
+                console.log(currentImg, "in gallery pictures loop");
+
+    imgGalleryParent.appendChild(currentImg);
+
+    })
 
 
 
