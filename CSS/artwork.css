@@ -9,7 +9,7 @@
 }
 
 
-a>h1 {
+.info {
     position: absolute;
     z-index: 1;
     font-size: 30px;
@@ -19,9 +19,7 @@ a>h1 {
 
 }
 
-main a> h1 {
-    grid-column: 1/-1;
-}
+
 
 main {
     position: relative;
@@ -61,6 +59,11 @@ main .artworkwrapper .artwork:first-child {
 
 }
 
+main .artworkwrapper .artwork:first-child .info {
+display: block;
+    padding-top: 30%;
+
+}
 main .artworkwrapper .artwork:nth-child(2) {
     grid-row: 1/5;
 }
@@ -94,7 +97,7 @@ main .artworkwrapper .artwork:hover .artwork {
 
 }
 
-.artwork:hover > a > .info {
+.artwork:hover >  .info {
     /*    transform: translate(0%);*/
     opacity: 1;
 
@@ -125,12 +128,12 @@ main .artworkwrapper .artwork:hover .artwork {
 }
 
 
-.artwork > a > .info {
+.artwork >   .info {
     z-index: 10;
     background: rgba(255, 255, 255, 0.8);
     display: grid;
     place-content: center;
-    /*    transform: translate(100%);*/
+    grid-row: 1/1;
     transition: .1s ease-in-out;
     height: 100%;
     opacity: 0;
