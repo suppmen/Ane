@@ -56,32 +56,23 @@ function showData(artWorkArray) {
 
         renderLandingPage(art);
 
-
-
-
-
     });
-  showSlides();
+    showSlides();
 
 }
 
 
 
 
-function  renderLandingPage(LandingPageImageArray){
-     const template = document.querySelector(".landing").content;
+function renderLandingPage(LandingPageImageArray) {
 
-        const copy = template.cloneNode(true);
+    const template = document.querySelector(".landing").content;
 
+    const copy = template.cloneNode(true);
 
-      copy.querySelector('.current-bg').src = LandingPageImageArray._embedded["wp:featuredmedia"][0].source_url;
+    copy.querySelector('.current-bg').src = LandingPageImageArray._embedded["wp:featuredmedia"][0].source_url;
 
-
-
-
-        document.querySelector(".bg-container").appendChild(copy);
-
-
+    document.querySelector(".bg-container").appendChild(copy);
 
 
 }
@@ -90,6 +81,7 @@ function  renderLandingPage(LandingPageImageArray){
 
 
 let slideIndex = 0;
+
 function showSlides() {
 
     let i;
@@ -98,7 +90,7 @@ function showSlides() {
         slides[i].style.display = "none";
 
     }
-    console.log("showslide",slides)
+    console.log("showslide", slides)
     slideIndex++;
     if (slideIndex > slides.length) {
         slideIndex = 1
@@ -107,7 +99,7 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
 
 
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
 };
 
 /************* about page ************/
@@ -120,7 +112,7 @@ const cv = document.querySelector(".cv");
 
 btnBio.addEventListener("click", showBio);
 
-function showBio(){
+function showBio() {
     bio.classList.remove("hidden");
     cv.classList.add("hidden");
     btnBio.style.fontWeight = "bold";
@@ -132,13 +124,13 @@ function showBio(){
 
 btnCv.addEventListener("click", showCv);
 
-function showCv(){
+function showCv() {
 
     bio.classList.add("hidden");
     cv.classList.remove("hidden");
     btnCv.style.fontWeight = "bold";
     btnCv.style.color = "#695559";
-     btnBio.style.fontWeight = "400";
+    btnBio.style.fontWeight = "400";
     btnBio.style.color = "black";
 
 
