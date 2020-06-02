@@ -122,9 +122,6 @@ function showSingleArtPage(art){
         console.log(divArtDescription, "div");
 
 
-//    if(art.long_description.length> 1){
-//        divArtDescription.innerHTML = art.content.rendered;
-
     copy.querySelector('.title').textContent = art.title.rendered;
     copy.querySelector(".short-description").textContent = art.short_description;
     copy.querySelector(".area").textContent = art.place_year;
