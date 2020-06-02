@@ -74,6 +74,11 @@ main li:hover a {
     display: block;
 }
 
+.styling > * span{
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 30px;
+}
 
 /******* Mobile version break point ******/
 
