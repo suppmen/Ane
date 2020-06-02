@@ -37,10 +37,9 @@ main .artworkwrapper {
     padding: 45px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh auto;
+    grid-template-rows: 40vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh auto;
     grid-gap: 2vh;
     grid-auto-flow: row;
-/*    height: calc(250vh - 10px);*/
 
 
 }
