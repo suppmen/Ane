@@ -223,3 +223,10 @@ main .artworkwrapper .artwork:hover .artwork {
     }
 
 }
+
+
+@media(hover: hover) and (pointer: fine) {
+    nav a:hover {
+        background: yellow;
+    }
+}
