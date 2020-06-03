@@ -20,7 +20,7 @@ function closeMenu() {
 
     headerUl.classList.remove("shown");
     btnExit.classList.add("hidden");
-    btnMenu.classList.add("shown");
+    btnMenu.classList.remove("hidden");
 
     headerUl.classList.add("hidden");
     console.log("hi dad", headerUl)
