@@ -75,8 +75,8 @@ main li:hover a {
 }
 
 .styling > * span{
-    font-size: 16px;
-    font-weight: bolder;
+    font-size: 20px;
+    font-weight: 900;
 
     line-height: 35px;
 }
