@@ -37,6 +37,9 @@
     z-index: 1;
     font-size: 30px;
     color: #000;
+        padding-left: 1.2em;
+    padding-right: 1.2em;
+
     align-self: center;
     font-family: 'Merriweather', serif;
 
@@ -60,7 +63,7 @@ main .artworkwrapper {
     padding: 45px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh auto;
+    grid-template-rows: 30vh 30vh 20vh 20vh 20vh 20vh 20vh 20vh auto;
     grid-gap: 2vh;
     grid-auto-flow: row;
 
@@ -91,9 +94,14 @@ main .artworkwrapper .artwork:nth-child(2) {
 
 main .artworkwrapper .artwork:nth-child(3) {
     grid-row: 3/7;
+
+}
+main .artworkwrapper .artwork:nth-child(3) img{
+        object-fit:cover;
+
 }
 main .artworkwrapper .artwork:nth-child(3) .info {
-    margin-top: -300px;
+    margin-top: -200px;
 }
 main .artworkwrapper .artwork:nth-child(4) {
     grid-row: 5/-1;
@@ -163,6 +171,12 @@ main .artworkwrapper .artwork:hover .artwork {
 /******* Mobile version break point ******/
 
 @media screen and (max-width: 760px) {
+   .artwork >    .info {
+    opacity: 1;
+       color: white;
+           background: #0000001c;
+
+}
 
     .top-nav {
         background: none;
@@ -195,7 +209,10 @@ main .artworkwrapper .artwork:hover .artwork {
         height: auto;
 
     }
+main .artworkwrapper .artwork:first-child .info {
+    padding-top: 50%;
 
+}
 
     main .artworkwrapper .artwork:first-child {
         grid-row: 1/2;
@@ -217,12 +234,11 @@ main .artworkwrapper .artwork:hover .artwork {
     main .artworkwrapper .artwork:nth-child(5) {
         grid-row: 7/8;
     }
+    main .artworkwrapper .artwork:nth-child(3) .info {
+    margin-top: 0;
+}
 
 }
 
 
-@media(hover: hover) and (pointer: fine) {
-    nav a:hover {
-        background: yellow;
-    }
-}
+

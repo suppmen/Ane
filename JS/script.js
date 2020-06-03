@@ -45,9 +45,7 @@ function getData() {
 }
 
 function showData(artWorkArray) {
-    console.log(artWorkArray, "artWorkArray");
     artWorkArray.forEach(art => {
-        console.log(art, "LoopTest");
 
         renderLandingPage(art);
 
@@ -66,8 +64,23 @@ function renderLandingPage(LandingPageImageArray) {
     const copy = template.cloneNode(true);
 
     copy.querySelector('.current-bg').src = LandingPageImageArray._embedded["wp:featuredmedia"][0].source_url;
+    copy.querySelector('.current-bg').id = LandingPageImageArray.id;
 
     document.querySelector(".bg-container").appendChild(copy);
+
+
+
+    const dotsTemplate = document.querySelector(".circles-temp").content;
+
+    const dotsCopy = dotsTemplate.cloneNode(true);
+
+    dotsCopy.querySelector('.title').textContent = LandingPageImageArray.art_name;
+    dotsCopy.querySelector('.title').id = LandingPageImageArray.id;
+    dotsCopy.querySelector('.circle').id = LandingPageImageArray.id;
+
+
+    document.querySelector(".circles-wrapper").appendChild(dotsCopy);
+
 
 
 }
@@ -90,8 +103,33 @@ function showSlides() {
     if (slideIndex > slides.length) {
         slideIndex = 1
     }
-    //
     slides[slideIndex - 1].style.display = "block";
+
+    dotsTitles = document.querySelectorAll(".title");
+    dotsTitles.forEach(title => {
+                            console.log('this is matching title', slides[slideIndex]     )
+
+        if (title.id === slides[slideIndex - 1].id) {
+                    console.log('this is matching title', title + title.id)
+
+            title.style.opacity = "1";
+        }else{
+            title.style.opacity = "0";
+        }
+    });
+
+       circles = document.querySelectorAll(".circle");
+    circles.forEach(circle => {
+                            console.log('this is matching title', slides[slideIndex]     )
+
+        if (circle.id === slides[slideIndex - 1].id) {
+                    console.log('this is matching title', circle + circle.id)
+
+            circle.style.background = "white";
+        }else{
+            circle.style.background = "none";
+        }
+    });
 
 
     setTimeout(showSlides, 5000); // Change image every 2 seconds
