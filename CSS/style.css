@@ -131,7 +131,12 @@ header li ul li a {
 
 
 
+   .menu-btn,
+    .exit-btn {
+  display: none;
 
+
+    }
 
 
 

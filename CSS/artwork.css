@@ -34,7 +34,6 @@
 }
 
 .info {
-    position: absolute;
     z-index: 1;
     font-size: 30px;
     color: #000;
@@ -76,15 +75,14 @@ main .artworkwrapper .artwork {
 }
 
 main .artworkwrapper .artwork:first-child {
-    grid-column-start: span 1;
-    grid-column-start: span 1;
+
     grid-row: 1/3;
 
 }
 
 main .artworkwrapper .artwork:first-child .info {
 display: block;
-    padding-top: 30%;
+    padding-top: 30vh;
 
 }
 main .artworkwrapper .artwork:nth-child(2) {
@@ -94,7 +92,9 @@ main .artworkwrapper .artwork:nth-child(2) {
 main .artworkwrapper .artwork:nth-child(3) {
     grid-row: 3/7;
 }
-
+main .artworkwrapper .artwork:nth-child(3) .info {
+    margin-top: -300px;
+}
 main .artworkwrapper .artwork:nth-child(4) {
     grid-row: 5/-1;
 }
@@ -115,13 +115,11 @@ main .artworkwrapper .artwork:hover .artwork {
     background: white;
     z-index: 10;
     position: absolute;
-    /*    filter: brightness(0.5)grayscale(100);*/
 
 
 }
 
 .artwork:hover >  .info {
-    /*    transform: translate(0%);*/
     opacity: 1;
 
 }
@@ -153,10 +151,9 @@ main .artworkwrapper .artwork:hover .artwork {
 
 .artwork >   .info {
     z-index: 10;
+   display: grid;
     background: rgba(255, 255, 255, 0.8);
-    display: grid;
     place-content: center;
-    grid-row: 1/1;
     transition: .1s ease-in-out;
     height: 100%;
     opacity: 0;
@@ -215,7 +212,6 @@ main .artworkwrapper .artwork:hover .artwork {
 
     main .artworkwrapper .artwork:nth-child(4) {
         grid-row: 6/7;
-        /*    grid-row-start: span 2;*/
     }
 
     main .artworkwrapper .artwork:nth-child(5) {
