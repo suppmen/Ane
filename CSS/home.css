@@ -94,6 +94,11 @@ header li:hover a {
 font-weight: 500;
         font-size: 1.2em;
     }
+      .shown{
+
+        background: none;
+
+    }
 
 header .logo-white {
    top: 0px;

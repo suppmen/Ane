@@ -41,6 +41,9 @@
     width: 90%;
        margin-left: 5%;
     margin-right: 10%;
+            padding:5% 0;
+    letter-spacing: 1.5px;
+
 }
 
 .img-gallery {
@@ -96,7 +99,6 @@ img {
 
     .long-description {
         font-size: 10pt;
-        margin: 5%;
     }
 
     .area {

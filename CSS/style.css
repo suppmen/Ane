@@ -63,7 +63,7 @@ header .logo-black {
   top: -30px;
   left: 20px;
   width: 250px;
-  z-index: 100;
+  z-index: 110;
 }
 
 
@@ -117,7 +117,7 @@ header  li a {
 
 header li:hover a {
     color: #695559;
-    font-weight: bold;
+/*    font-weight: bold;*/
     text-decoration: underline;
 }
 
@@ -164,10 +164,14 @@ header li ul li a {
         margin: 0;
         text-align: center;
         z-index: 120;
+                padding-top: 100px;
+        height: 100%;
+
     }
 
-    header li {
-        margin-bottom: 1px;
+    header ul li a{
+        margin-top: 25px;
+
     }
 
     header ul li,
@@ -176,6 +180,7 @@ header li ul li a {
         text-align: center;
    padding-right: 10px;
         font-size: 1.2em;
+
     }
 
 
@@ -198,7 +203,6 @@ header li ul li a {
         top: -100px;
         justify-content: center;
         align-items: center;
-        background-color: white;
         height: 100vh;
         z-index: 100;
     }
@@ -229,7 +233,14 @@ header li ul li a {
 }
     .shown{
         display: flex;
+        width: 100vw;
+        justify-content: center;
+        align-items: flex-start;
+        background: white;
+        height: 100%;
+        margin: 0;
     }
+
 
 }
 
