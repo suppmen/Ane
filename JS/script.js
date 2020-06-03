@@ -5,11 +5,9 @@ const headerUl = document.getElementById("menu");
 btnMenu.addEventListener("click", showNav);
 
 function showNav() {
-    console.log("hi mom", headerUl)
     headerUl.classList.add("shown");
     btnMenu.classList.add("hidden")
-    btnMenu.classList.remove("shown")
-
+    btnMenu.classList.remove("shown");
     btnExit.classList.remove("hidden");
 }
 
@@ -21,10 +19,7 @@ function closeMenu() {
     headerUl.classList.remove("shown");
     btnExit.classList.add("hidden");
     btnMenu.classList.remove("hidden");
-
-    headerUl.classList.add("hidden");
-    console.log("hi dad", headerUl)
-
+    btnMenu.classList.remove("shown");
 }
 
 

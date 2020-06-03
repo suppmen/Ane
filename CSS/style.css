@@ -13,10 +13,12 @@ body {
     height: 100%;
 }
 
-a{
+a {
     text-decoration: none;
 }
+
 /*************Footer************/
+
 footer {
 
     background-color: #acb8c1a6;
@@ -27,7 +29,7 @@ footer {
     justify-content: space-around;
     padding: 0 100px;
     flex-wrap: wrap;
-    margin-top:   10vh;
+    margin-top: 10vh;
     position: static;
     bottom: 0;
 }
@@ -51,24 +53,23 @@ footer .social {
 }
 
 /**********************************/
+
 header {
-
     width: 100%;
-
-
 }
 
 header .logo-black {
-  position: absolute;
-  top: -30px;
-  left: 20px;
-  width: 250px;
-  z-index: 110;
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    width: 250px;
+    z-index: 110;
 }
 
 
 /******  TopNavigation ****/
-.top-nav{
+
+.top-nav {
     position: absolute;
     z-index: 100;
     right: 70px;
@@ -97,14 +98,14 @@ header ul li {
 
 
 header ul li a.active {
-   color: #695559;
+    color: #695559;
     font-weight: bold;
     text-decoration: underline;
 
 }
 
 
-header  li a {
+header li a {
     display: block;
     min-width: 100px;
     height: 50px;
@@ -117,7 +118,6 @@ header  li a {
 
 header li:hover a {
     color: #695559;
-/*    font-weight: bold;*/
     text-decoration: underline;
 }
 
@@ -130,28 +130,10 @@ header li ul li a {
 
 
 
-.menu-btn{
-    position: absolute;
-    right : 70px;
-}
-
-
-#menu{
-        margin-left: 50px;
-
-}
 
 
 
 
-  .menu-btn, .exit-btn{
-        position: absolute;
-        right: 80px;
-        top: 55px;
-      display: none;
-    }
-
-/***********************************/
 
 /******* Top Navigation break ******/
 
@@ -159,17 +141,18 @@ header li ul li a {
     header ul {
         position: static;
         display: none;
-        align-self: center;
         flex-flow: column;
         margin: 0;
         text-align: center;
+
         z-index: 120;
-                padding-top: 100px;
+        padding-top: 100px;
         height: 100%;
 
     }
 
-    header ul li a{
+
+    header ul li a {
         margin-top: 25px;
 
     }
@@ -178,8 +161,8 @@ header li ul li a {
     header li a {
         width: 100%;
         text-align: center;
-   padding-right: 10px;
         font-size: 1.2em;
+
 
     }
 
@@ -191,54 +174,50 @@ header li ul li a {
 
 
     header .logo-black {
-  top: 0px;
-  left: 20px;
-  width: 200px;
-  z-index: 110;
-}
-    .top-nav{
+        top: 0px;
+        left: 0px;
+        width: 200px;
+        position: absolute;
+        z-index: 110;
+    }
+
+    .top-nav {
         width: 100vw;
         display: flex;
         right: 0;
-        top: -100px;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         height: 100vh;
         z-index: 100;
     }
-     .menu-btn, .exit-btn{
+
+    .menu-btn,
+    .exit-btn {
         position: absolute;
-        right: 80px;
-        top: 70px;
-      display: inline-block;
-         z-index: 110;
-         font-weight: 500;
-         cursor: pointer;
-
-    }
-        .menu-btn{
-
-        font-size: 1.2em;
+        right: 70px;
+        top: 65px;
+        display: inline-block;
+        z-index: 110;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 1.8em;
 
 
     }
-     .exit-btn{
-
-        font-size: 1.3em;
 
 
+
+    .hidden {
+        display: none;
     }
-  .hidden{
-    display: none;
-}
-    .shown{
+
+    .shown {
         display: flex;
         width: 100vw;
-        justify-content: center;
-        align-items: flex-start;
         background: white;
         height: 100%;
         margin: 0;
+        justify-content: flex-start;
     }
 
 
