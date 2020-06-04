@@ -41,11 +41,11 @@ const link1 = "https://mymmd.dk/Ane/wp-json/wp/v2/artwork?per_page=100&_embed";
 
 function getData() {
 
-        fetch(link1)
-            .then(function (response) {
-                return response.json();
-            })
-            .then(showData);
+    fetch(link1)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(showData);
 
 
 }
@@ -93,7 +93,6 @@ function renderLandingPage(LandingPageImageArray) {
     document.querySelector(".circles-wrapper").appendChild(dotsCopy);
 
 
-
 }
 
 
@@ -109,7 +108,7 @@ function showSlides() {
         slides[i].style.display = "none";
 
     }
-    console.log("showslide", slides)
+   .log("showslide", slides)
     slideIndex++;
     if (slideIndex > slides.length) {
         slideIndex = 1
@@ -120,7 +119,6 @@ function showSlides() {
     dotsTitles.forEach(title => {
 
         if (title.id === slides[slideIndex - 1].id) {
-            console.log('this is matching title', title + title.id)
 
             title.style.opacity = "1";
         } else {

@@ -37,7 +37,7 @@
     z-index: 1;
     font-size: 30px;
     color: #000;
-        padding-left: 1.2em;
+    padding-left: 1.2em;
     padding-right: 1.2em;
 
     align-self: center;
@@ -84,10 +84,11 @@ main .artworkwrapper .artwork:first-child {
 }
 
 main .artworkwrapper .artwork:first-child .info {
-display: block;
+    display: block;
     padding-top: 30vh;
 
 }
+
 main .artworkwrapper .artwork:nth-child(2) {
     grid-row: 1/5;
 }
@@ -96,13 +97,16 @@ main .artworkwrapper .artwork:nth-child(3) {
     grid-row: 3/7;
 
 }
-main .artworkwrapper .artwork:nth-child(3) img{
-        object-fit:cover;
+
+main .artworkwrapper .artwork:nth-child(3) img {
+    object-fit: cover;
 
 }
+
 main .artworkwrapper .artwork:nth-child(3) .info {
     margin-top: -200px;
 }
+
 main .artworkwrapper .artwork:nth-child(4) {
     grid-row: 5/-1;
 }
@@ -127,7 +131,7 @@ main .artworkwrapper .artwork:hover .artwork {
 
 }
 
-.artwork:hover >  .info {
+.artwork:hover > .info {
     opacity: 1;
 
 }
@@ -139,7 +143,7 @@ main .artworkwrapper .artwork:hover .artwork {
 
 }
 
-.artwork  a{
+.artwork a {
     position: relative;
     width: 100%;
     min-width: 100%;
@@ -148,7 +152,7 @@ main .artworkwrapper .artwork:hover .artwork {
     min-height: 800px;
 }
 
-.artwork  img {
+.artwork img {
     position: relative;
     width: 100%;
     grid-column: 1/-1;
@@ -157,9 +161,9 @@ main .artworkwrapper .artwork:hover .artwork {
 }
 
 
-.artwork >   .info {
+.artwork > .info {
     z-index: 10;
-   display: grid;
+    display: grid;
     background: rgba(255, 255, 255, 0.8);
     place-content: center;
     transition: .1s ease-in-out;
@@ -173,12 +177,12 @@ main .artworkwrapper .artwork:hover .artwork {
 /******* Mobile version break point ******/
 
 @media screen and (max-width: 760px) {
-   .artwork >    .info {
-    opacity: 1;
-       color: white;
-           background: #0000001c;
+    .artwork > .info {
+        opacity: 1;
+        color: white;
+        background: #0000001c;
 
-}
+    }
 
     .top-nav {
         background: none;
@@ -211,10 +215,11 @@ main .artworkwrapper .artwork:hover .artwork {
         height: auto;
 
     }
-main .artworkwrapper .artwork:first-child .info {
-    padding-top: 50%;
 
-}
+    main .artworkwrapper .artwork:first-child .info {
+        padding-top: 50%;
+
+    }
 
     main .artworkwrapper .artwork:first-child {
         grid-row: 1/2;
@@ -236,10 +241,9 @@ main .artworkwrapper .artwork:first-child .info {
     main .artworkwrapper .artwork:nth-child(5) {
         grid-row: 7/8;
     }
+
     main .artworkwrapper .artwork:nth-child(3) .info {
-    margin-top: 0;
-}
+        margin-top: 0;
+    }
 
 }
-
-

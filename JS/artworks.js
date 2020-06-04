@@ -65,7 +65,7 @@ function getData() {
     const urlParams = new URLSearchParams(window.location.search);
     const the_art_id = urlParams.get('art_id');
     const link2 = "https://mymmd.dk/Ane/wp-json/wp/v2/artwork/" + the_art_id + "?per_page=100&_embed";
-    console.log(the_art_id, "IdTest");
+
 
 
     if (the_art_id) {
@@ -87,9 +87,9 @@ function getData() {
 
 
 function showData(artWorkArray) {
-    console.log(artWorkArray, "artWorkArray");
+
     artWorkArray.forEach(art => {
-        console.log(art, "LoopTest");
+
 
         renderArtworkPage(art);
 
@@ -128,14 +128,14 @@ function renderArtworkPage(ArtworkPageArray) {
 
 
 function showSingleArtPage(art) {
-    console.log(art, "art");
-    console.log(window.location);
+
+
     const template = document.querySelector("template").content;
 
     const copy = template.cloneNode(true);
 
     const divArtDescription = copy.querySelector('#art-description');
-    console.log(divArtDescription, "div");
+
 
 
     copy.querySelector('.top-text > .title').textContent = art.title.rendered;
@@ -197,7 +197,7 @@ function showSingleArtPage(art) {
         art.gallery_pictures.forEach(picture => {
             const currentImg = document.createElement("img");
             currentImg.src = picture.guid;
-            console.log(currentImg, "in gallery pictures loop");
+
 
             imgGalleryParent.appendChild(currentImg);
 

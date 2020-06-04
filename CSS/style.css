@@ -16,7 +16,8 @@ body {
 a {
     text-decoration: none;
 }
-.circles-wrapper{
+
+.circles-wrapper {
     position: absolute;
     display: flex;
     z-index: 110;
@@ -27,12 +28,14 @@ a {
     top: 40%;
 
 }
-.circle-wrapper{
+
+.circle-wrapper {
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
 }
-.dot-title{
+
+.dot-title {
     color: white;
     align-self: baseline;
     margin-right: 20px;
@@ -43,7 +46,8 @@ a {
     opacity: 0;
 
 }
-.circle{
+
+.circle {
     width: 15px;
     height: 15px;
     border: 2px solid white;
@@ -51,11 +55,13 @@ a {
     border-radius: 50%;
     padding-top: 5px;
 }
-.circle:hover{
+
+.circle:hover {
     background-color: white;
-        border: 5px solid white;
+    border: 5px solid white;
 
 }
+
 /*************Footer************/
 
 footer {
@@ -91,7 +97,7 @@ footer .social {
     width: 100px;
 }
 
-footer p{
+footer p {
     text-align: center;
 }
 
@@ -174,12 +180,12 @@ header li ul li a {
 
 
 
-   .menu-btn,
-    .exit-btn {
-  display: none;
+.menu-btn,
+.exit-btn {
+    display: none;
 
 
-    }
+}
 
 
 
@@ -267,38 +273,41 @@ header li ul li a {
         justify-content: flex-start;
     }
 
-.circles-wrapper{
-    position: absolute;
-    display: flex;
-    z-index: 110;
-    flex-flow: row;
-    justify-content: space-around;
-    height: 100px;
-    width: 80%;
-    right: 0px;
-    top: inherit;
-    bottom: 50px;
+    .circles-wrapper {
+        position: absolute;
+        display: flex;
+        z-index: 110;
+        flex-flow: row;
+        justify-content: space-around;
+        height: 100px;
+        width: 80%;
+        right: 0px;
+        top: inherit;
+        bottom: 50px;
         margin-right: 50px;
 
 
-}
-.circle-wrapper{
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    flex-flow: column-reverse;
-    width: 50px;
-}
-.dot-title{
-    margin-right: 0;
-    font-size: 1em;
-}
-.circle{
+    }
 
-    align-self: baseline;
+    .circle-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        flex-flow: column-reverse;
+        width: 50px;
+    }
 
-    padding-top: 0px;
-}
+    .dot-title {
+        margin-right: 0;
+        font-size: 1em;
+    }
+
+    .circle {
+
+        align-self: baseline;
+
+        padding-top: 0px;
+    }
 }
 
 /**************************************/

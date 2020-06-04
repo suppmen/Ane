@@ -41,7 +41,7 @@ html {
     flex-flow: column wrap;
     width: 100%;
     justify-content: space-around;
-width: 90%;
+    width: 90%;
     margin-left: 5%;
 
     margin-bottom: 50px;
@@ -52,7 +52,7 @@ width: 90%;
 
 
     padding: 0;
-/*    padding-left: 100px;*/
+    /*    padding-left: 100px;*/
     margin: 0;
 }
 
@@ -73,14 +73,15 @@ width: 90%;
     justify-content: center;
     width: 100%;
 }
-.top-wrapper{
+
+.top-wrapper {
     justify-content: space-around;
 }
 
-main ul{
+main ul {
     display: flex;
     flex-flow: row;
-     justify-content: flex-end;
+    justify-content: flex-end;
     list-style-type: none;
     margin-right: 0px;
     padding: 0;
@@ -88,17 +89,19 @@ main ul{
     font-size: 15px;
 
 }
-article{
+
+article {
     padding-left: 10%;
 }
-main ul li{
-  display: list-item;
+
+main ul li {
+    display: list-item;
     list-style: none;
     padding: 30px;
     margin: 0 1px;
 }
 
-main li a{
+main li a {
     min-width: 100px;
     height: 50px;
     text-align: center;
@@ -113,15 +116,15 @@ main li:hover a {
     text-decoration: underline;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
-.shown{
+.shown {
     display: block;
 }
 
-.styling  > * span{
+.styling > * span {
     font-size: 20px;
     font-weight: 900;
 
@@ -143,16 +146,17 @@ main li:hover a {
         width: 100vw;
 
     }
+
     .wrapper {
-    padding-left: 16px;
-    padding-right: 16px;
-}
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 
 
-    main ul li{
-    padding: 15px;
+    main ul li {
+        padding: 15px;
 
-}
+    }
 
 
 
@@ -164,10 +168,10 @@ main li:hover a {
 
 
 
-    main ul li{
-    padding: 10px;
+    main ul li {
+        padding: 10px;
 
-}
+    }
 
 
 
