@@ -136,8 +136,6 @@ function showSingleArtPage(art) {
 
     const divArtDescription = copy.querySelector('#art-description');
 
-
-
     copy.querySelector('.top-text > .title').textContent = art.title.rendered;
     copy.querySelector(".short-description").textContent = art.short_description;
     copy.querySelector(".area").textContent = art.place_year;
