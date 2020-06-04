@@ -32,7 +32,7 @@ a {
     justify-content: flex-end;
     align-items: baseline;
 }
-.title{
+.dot-title{
     color: white;
     align-self: baseline;
     margin-right: 20px;
@@ -285,12 +285,9 @@ header li ul li a {
     flex-flow: column-reverse;
     width: 50px;
 }
-.title{
-
+.dot-title{
     margin-right: 0;
     font-size: 1em;
-
-
 }
 .circle{
 

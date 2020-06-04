@@ -109,7 +109,6 @@ function renderArtworkPage(ArtworkPageArray) {
     const copy = template.cloneNode(true);
 
 
-//    copy.querySelector('.artwork-images').src = ArtworkPageArray._embedded["wp:featuredmedia"][0].source_url;
     copy.querySelector(".artwork-images").src = ArtworkPageArray.cover_image.guid;
 
     copy.querySelector(".info").textContent = ArtworkPageArray.title.rendered;
@@ -139,11 +138,10 @@ function showSingleArtPage(art) {
     console.log(divArtDescription, "div");
 
 
-    copy.querySelector('.title').textContent = art.title.rendered;
+    copy.querySelector('.top-text > .title').textContent = art.title.rendered;
     copy.querySelector(".short-description").textContent = art.short_description;
     copy.querySelector(".area").textContent = art.place_year;
 
-//    copy.querySelector(".topimg").src = art._embedded["wp:featuredmedia"][0].source_url;
     copy.querySelector(".topimg").src = art.cover_image.guid;
 
     copy.querySelector(".long-description").textContent = art.long_description;
