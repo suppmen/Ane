@@ -12,26 +12,43 @@ html {
 .wrapper {
     margin-top: 170px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     width: 100%;
     justify-content: space-around;
-    padding-left: 160px;
-    padding-right: 160px;
+width: 90%;
+    margin-left: 5%;
+
     margin-bottom: 50px;
 }
 
 #image {
     width: 100%;
-    max-width: 500px;
-    max-height: 200px;
+
 
     padding: 0;
+/*    padding-left: 100px;*/
     margin: 0;
 }
 
+.info-items {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-self: flex-start;
+    justify-content: space-around;
+    width: 100%;
+}
 
 .items {
     text-align: center;
+    display: flex;
+    flex-flow: row;
+    align-self: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+.top-wrapper{
+    justify-content: space-around;
 }
 
 main ul{
@@ -44,6 +61,9 @@ main ul{
     overflow: hidden;
     font-size: 15px;
 
+}
+article{
+    padding-left: 10%;
 }
 main ul li{
   display: list-item;
@@ -75,7 +95,7 @@ main li:hover a {
     display: block;
 }
 
-.styling > * span{
+.styling  > * span{
     font-size: 20px;
     font-weight: 900;
 
@@ -117,13 +137,7 @@ main li:hover a {
 
 
 
-    #image {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    padding: 0;
-    margin: 0;
-}
+
     main ul li{
     padding: 10px;
 

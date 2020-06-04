@@ -1,4 +1,4 @@
-.process-video{margin-top: 10%;
+.process-video{margin-top: 170px;
                margin-right:5%;
                margin-left: 5%;
             }
@@ -19,7 +19,7 @@ margin-top:5%;}
 
 
 .process-description{display: grid;
-    grid-gap: 2%;
+    grid-gap: 20px;
     line-height: 2em;;
                 margin-right:5%;
                margin-left: 5%;
@@ -83,12 +83,14 @@ width:100%;}
 
 @media screen and (max-width: 760px) {
 
-
+    .process-video {
+        margin-top: 100px;
+    }
 
     .process-video video{z-index:100;}
 
     .process-description{
-        margin-bottom: 0;
+        margin-bottom: 50px;
         display: grid;
       grid-template-columns: 1fr;
 
@@ -104,4 +106,15 @@ width:100%;}
     }
 
 }
+
+
+@media screen and (max-width: 590px) {
+
+    .process-video {
+        margin-top: 60px;
+    }
+
+
+}
+
 
