@@ -147,7 +147,6 @@ function showSingleArtPage(art) {
     copy.querySelector(".topimg").src = art.cover_image.guid;
 
     copy.querySelector(".long-description").textContent = art.long_description;
-    copy.querySelector(".topimg").src = art._embedded["wp:featuredmedia"][0].source_url;
 
 
     if (art.video) {
