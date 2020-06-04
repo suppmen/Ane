@@ -106,6 +106,9 @@ main li:hover a {
     padding: 15px;
 
 }
+    #image {
+   min-height: 200px;
+}
 
 
 
