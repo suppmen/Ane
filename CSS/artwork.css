@@ -63,7 +63,7 @@ main .artworkwrapper {
     padding: 45px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30vh 30vh 20vh 20vh 20vh 20vh 20vh 20vh auto;
+    grid-template-rows: 40vh 30vh 20vh 20vh 20vh 20vh 20vh 20vh auto;
     grid-gap: 2vh;
     grid-auto-flow: row;
 
@@ -89,8 +89,9 @@ main .artworkwrapper .artwork:first-child .info {
 
 }
 
+
 main .artworkwrapper .artwork:nth-child(2) {
-    grid-row: 1/5;
+    grid-row: 1/4;
 }
 
 main .artworkwrapper .artwork:nth-child(3) {
@@ -98,22 +99,23 @@ main .artworkwrapper .artwork:nth-child(3) {
 
 }
 
-main .artworkwrapper .artwork:nth-child(3) img {
-    object-fit: cover;
 
-}
 
 main .artworkwrapper .artwork:nth-child(3) .info {
-    margin-top: -200px;
+    margin-top: -100px;
 }
 
 main .artworkwrapper .artwork:nth-child(4) {
-    grid-row: 5/-1;
+    grid-row: 4/8;
 }
 
 main .artworkwrapper .artwork:nth-child(5) {
     grid-row: 7/-1;
 }
+main .artworkwrapper .artwork:nth-child(6) {
+    grid-row: 8/-1
+}
+
 
 
 main .artworkwrapper .artwork img {
