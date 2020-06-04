@@ -33,7 +33,6 @@ function closeMenu() {
 
 
 const link1 = "https://mymmd.dk/Ane/wp-json/wp/v2/artwork?per_page=100&_embed";
-window.addEventListener("DOMContentLoaded", getData);
 
 
 
