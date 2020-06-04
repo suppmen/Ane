@@ -142,41 +142,58 @@ function showSingleArtPage(art) {
     copy.querySelector('.title').textContent = art.title.rendered;
     copy.querySelector(".short-description").textContent = art.short_description;
     copy.querySelector(".area").textContent = art.place_year;
+<<<<<<< HEAD
 //    copy.querySelector(".topimg").src = art._embedded["wp:featuredmedia"][0].source_url;
     copy.querySelector(".topimg").src = art.cover_image.guid;
+=======
+>>>>>>> video
     copy.querySelector(".long-description").textContent = art.long_description;
+    copy.querySelector(".topimg").src = art._embedded["wp:featuredmedia"][0].source_url;
 
-    if (art.portrait_one){
+
+    if (art.video) {
+        copy.querySelector(".top-movie").src = art.video.guid;
+         copy.querySelector(".topimg").style.display = "none";
+    } else {
+        copy.querySelector(".top-movie").style.display = "none";
+        copy.querySelector(".topimg").style.display = "block";
+
+    };
+
+
+
+
+    if (art.portrait_one) {
         copy.querySelector(".portrait1").src = art.portrait_one.guid;
-    } else{
+    } else {
         copy.querySelector(".portrait1").style.display = "none";
     }
 
-    if (art.portrait_two){
-    copy.querySelector(".portrait2").src = art.portrait_two.guid;
-        } else{
-            copy.querySelector(".portrait2").style.display = "none";
-        }
+    if (art.portrait_two) {
+        copy.querySelector(".portrait2").src = art.portrait_two.guid;
+    } else {
+        copy.querySelector(".portrait2").style.display = "none";
+    }
 
 
-    if (art.portrait_three){
-    copy.querySelector(".portrait3").src = art.portrait_three.guid;
-        } else{
-            copy.querySelector(".portrait3").style.display = "none";
-        }
+    if (art.portrait_three) {
+        copy.querySelector(".portrait3").src = art.portrait_three.guid;
+    } else {
+        copy.querySelector(".portrait3").style.display = "none";
+    }
 
 
-    if (art.portrait_four){
-    copy.querySelector(".portrait4").src = art.portrait_four.guid;
-        } else{
-            copy.querySelector(".portrait4").style.display = "none";
-        }
+    if (art.portrait_four) {
+        copy.querySelector(".portrait4").src = art.portrait_four.guid;
+    } else {
+        copy.querySelector(".portrait4").style.display = "none";
+    }
 
-    if (art.landscape_one){
-    copy.querySelector(".landscape").src = art.landscape_one.guid;
-        }else{
-            copy.querySelector(".landscape").style.display = "none";
-        }
+    if (art.landscape_one) {
+        copy.querySelector(".landscape").src = art.landscape_one.guid;
+    } else {
+        copy.querySelector(".landscape").style.display = "none";
+    }
 
     const imgGalleryParent = copy.querySelector(".img-gallery");
 
@@ -191,7 +208,7 @@ function showSingleArtPage(art) {
         })
     }
 
- document.querySelector("#single-art").appendChild(copy);
+    document.querySelector("#single-art").appendChild(copy);
 
 
 };
