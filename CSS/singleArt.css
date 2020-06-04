@@ -34,6 +34,13 @@
     margin-left: 5%;
     margin-right: 5%;
 }
+.top-movie {
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 .long-description {
     position: relative;
