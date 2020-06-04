@@ -88,7 +88,7 @@ width:100%;}
     .process-video video{z-index:100;}
 
     .process-description{
-        margin-bottom: 50%;
+        margin-bottom: 60%;
         display: grid;
       grid-template-columns: 1fr;
 
