@@ -108,7 +108,6 @@ function showSlides() {
         slides[i].style.display = "none";
 
     }
-   .log("showslide", slides)
     slideIndex++;
     if (slideIndex > slides.length) {
         slideIndex = 1
