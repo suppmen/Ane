@@ -142,11 +142,10 @@ function showSingleArtPage(art) {
     copy.querySelector('.title').textContent = art.title.rendered;
     copy.querySelector(".short-description").textContent = art.short_description;
     copy.querySelector(".area").textContent = art.place_year;
-<<<<<<< HEAD
+
 //    copy.querySelector(".topimg").src = art._embedded["wp:featuredmedia"][0].source_url;
     copy.querySelector(".topimg").src = art.cover_image.guid;
-=======
->>>>>>> video
+
     copy.querySelector(".long-description").textContent = art.long_description;
     copy.querySelector(".topimg").src = art._embedded["wp:featuredmedia"][0].source_url;
 
