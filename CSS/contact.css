@@ -1,7 +1,7 @@
 
 .contact {
 
-    margin-top: 170px;
+    margin-top: 125px;
     margin-bottom: 100px;
     display: flex;
     flex-flow: column;
@@ -61,7 +61,10 @@ form {
 [type="submit"]:hover {
     background:gray;
 }
-
+footer{
+    position: absolute;
+    bottom: 0;
+}
 
 
 
