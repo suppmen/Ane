@@ -62,7 +62,10 @@ form {
     background: gray;
 }
 
-
+footer {
+     position: absolute;
+     bottom: 0;
+ }
 
 
 /******* Mobile version break point ******/
