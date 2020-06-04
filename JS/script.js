@@ -66,7 +66,8 @@ function renderLandingPage(LandingPageImageArray) {
 
     const copy = template.cloneNode(true);
 
-    copy.querySelector('.current-bg').src = LandingPageImageArray._embedded["wp:featuredmedia"][0].source_url;
+//    copy.querySelector('.current-bg').src = LandingPageImageArray._embedded["wp:featuredmedia"][0].source_url;
+    copy.querySelector(".current-bg").src = LandingPageImageArray.cover_image.guid
     copy.querySelector('.current-bg').id = LandingPageImageArray.id;
 
     document.querySelector(".bg-container").appendChild(copy);
@@ -135,6 +136,6 @@ function showSlides() {
     });
 
 
-    setTimeout(showSlides, 5000); // Change image every 2 seconds
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
 };
 
